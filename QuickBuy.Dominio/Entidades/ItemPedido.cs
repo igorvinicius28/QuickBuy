@@ -4,7 +4,7 @@ using System.Text;
 
 namespace QuickBuy.Dominio.Entidades
 {
-    public class ItemPedido
+    public class ItemPedido : Entidade
     {
         /// <summary>
         /// 
@@ -20,5 +20,13 @@ namespace QuickBuy.Dominio.Entidades
         /// 
         /// </summary>
         public int Quantidade { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public override void Validate()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

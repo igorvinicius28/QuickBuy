@@ -2,7 +2,7 @@
 
 namespace QuickBuy.Dominio.Entidades
 {
-    public class Usuario
+    public class Usuario : Entidade
     {
         /// <summary>
         /// 
@@ -33,5 +33,13 @@ namespace QuickBuy.Dominio.Entidades
         /// Usuario pode ter nenhum ou muitos pedidos.
         /// </summary>
         public ICollection<Pedido> Pedidos { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public override void Validate()
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace QuickBuy.Dominio.Entidades
 {
-    public class Produto
+    public class Produto : Entidade
     {
         /// <summary>
         /// 
@@ -25,5 +25,13 @@ namespace QuickBuy.Dominio.Entidades
         /// 
         /// </summary>
         public decimal Preco { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public override void Validate()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

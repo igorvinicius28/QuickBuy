@@ -10,7 +10,7 @@ namespace QuickBuy.Dominio.Entidades
         /// <summary>
         /// 
         /// </summary>
-        public List<string> _mensagensValidacao{ get; set; }
+        private List<string> _mensagensValidacao{ get; set; }
 
         /// <summary>
         /// 

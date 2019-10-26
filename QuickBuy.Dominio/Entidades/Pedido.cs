@@ -26,6 +26,11 @@ namespace QuickBuy.Dominio.Entidades
         /// <summary>
         /// 
         /// </summary>
+        public virtual Usuario Usuario{ get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         public DateTime DataPrevisaoEntrega { get; set; }
 
         /// <summary>
@@ -61,13 +66,13 @@ namespace QuickBuy.Dominio.Entidades
         /// <summary>
         /// 
         /// </summary>
-        public FormaPagamento FormaPagamento { get; set; }
+        public virtual FormaPagamento FormaPagamento { get; set; }
 
         /// <summary>
         /// Pedido deve ter pelo menos um item de pedido 
         /// ou muitos itens de pedidos.
         /// </summary>
-        public ICollection<ItemPedido> ItensPedido { get; set; }
+        public virtual ICollection<ItemPedido> ItensPedido { get; set; }
 
         /// <summary>
         /// 
